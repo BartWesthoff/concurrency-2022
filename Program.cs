@@ -9,20 +9,20 @@ namespace Quiz
     // The values within WorkingParams can change during the experiments. 
     class SubmissionParams
     {
-        public const string studentNumberOne = ""; // This must be filled.
+        public const string studentNumberOne = "0199807"; // This must be filled.
         public const string studentNumberTwo = ""; // This must be filled. Keep it "" if you are working alone.
-        public const string classNumber = ""; // This must be filled. INF2A is just an example.
+        public const string classNumber = "INF4B"; // This must be filled. INF2A is just an example.
     }
 
     // The values of FixedParams must not change in the final submission.
     class FixedParams
     {
-        public const int minThinkingTimeTeacher = 1;
-        public const int maxThinkingTimeTeacher = 5;
-        public const int minThinkingTimeStudent = 1;
-        public const int maxThinkingTimeStudent = 2;
-        public const int maxNumOfQuestions = 40; 
-        public const int maxNumOfStudents = 10;
+        public const int minThinkingTimeTeacher = 50;
+        public const int maxThinkingTimeTeacher = 200;
+        public const int minThinkingTimeStudent = 20;
+        public const int maxThinkingTimeStudent = 100;
+        public const int maxNumOfQuestions = 10;
+        public const int maxNumOfStudents = 200;
         public const int maxNumOfTeachers = 10;
         public const char delim = ',';
     }
@@ -38,7 +38,7 @@ namespace Quiz
 
             seqSW.Start();
             QuizSequential sq = new QuizSequential();
-            sq.RunExams();
+            //sq.RunExams();
             logSeqContent = logSeqContent + sq.FinalResult();
             seqSW.Stop();
 
