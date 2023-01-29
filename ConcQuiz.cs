@@ -159,19 +159,9 @@ namespace ConcQuiz
         public override void PrepareExam(int maxNumOfQuestion)
         {
             //todo: implement the body
-            // NOTE: Moet wel goed zijn dit
             List<Thread> threads = new List<Thread>();
            
-            //foreach (ConcTeacher t in this.Teachers)
-            //{
-            //    Thread tr = new Thread(() => t.PrepareExam(maxNumOfQuestion));
-            //    threads.Add(tr);
-            //    tr.Start();
-            //}
-            //foreach (Thread thr in threads)
-            //{
-            //    thr.Join();
-            //}
+  
 
             foreach (var teacher in Teachers)
             {
@@ -189,7 +179,6 @@ namespace ConcQuiz
         public override void DistributeExam()
         {
             //todo: implement the body
-            // NOTE: Moet wel goed zijn dit
             foreach (ConcStudent s in this.Students)
             {
                 s.AssignExam(this.Exam);
@@ -198,7 +187,6 @@ namespace ConcQuiz
         public override void StartExams()
         {
             //todo: implement the body
-            // NOTE: Moet wel goed zijn dit
             List<Thread> threads = new List<Thread>();
             foreach (var student in this.Students)
             {

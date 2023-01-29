@@ -9,9 +9,9 @@ namespace Quiz
     // The values within WorkingParams can change during the experiments. 
     class SubmissionParams
     {
-        public const string studentNumberOne = "0199807"; // This must be filled.
-        public const string studentNumberTwo = ""; // This must be filled. Keep it "" if you are working alone.
-        public const string classNumber = "INF4B"; // This must be filled. INF2A is just an example.
+        public const string studentNumberOne = "0991807"; // This must be filled.
+        public const string studentNumberTwo = "0982940"; // This must be filled. Keep it "" if you are working alone.
+        public const string classNumber = "INF"; // This must be filled. INF2A is just an example.
     }
 
     // The values of FixedParams must not change in the final submission.
@@ -21,7 +21,7 @@ namespace Quiz
         public const int maxThinkingTimeTeacher = 200;
         public const int minThinkingTimeStudent = 20;
         public const int maxThinkingTimeStudent = 100;
-        public const int maxNumOfQuestions = 10;
+        public const int maxNumOfQuestions = 40;
         public const int maxNumOfStudents = 200;
         public const int maxNumOfTeachers = 10;
         public const char delim = ',';
