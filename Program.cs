@@ -11,7 +11,7 @@ namespace Quiz
     {
         public const string studentNumberOne = "0991807"; // This must be filled.
         public const string studentNumberTwo = "0982940"; // This must be filled. Keep it "" if you are working alone.
-        public const string classNumber = "INF"; // This must be filled. INF2A is just an example.
+        public const string classNumber = "RETAKERS, INF4B, INF3C"; // This must be filled. INF2A is just an example.
     }
 
     // The values of FixedParams must not change in the final submission.
@@ -38,7 +38,7 @@ namespace Quiz
 
             seqSW.Start();
             QuizSequential sq = new QuizSequential();
-            //sq.RunExams();
+            sq.RunExams();
             logSeqContent = logSeqContent + sq.FinalResult();
             seqSW.Stop();
 
