@@ -23,7 +23,7 @@ namespace ConcQuiz
             //todo: implement the body 
             lock (mutex)
             {
-                this.Answers.AddFirst(a);
+                this.Answers.AddLast(a);
             }
         }
     }
